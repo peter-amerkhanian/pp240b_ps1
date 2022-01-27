@@ -1,0 +1,31 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Problem Set 1, Peter Amerkhanian 
+
+```{r}
+library(readr)
+library(dplyr)
+df <- read_csv("SEDA_DistrictData_toconvertforR.csv", 
+    col_names = FALSE)
+cols_ <- list("leaid", "leaname","fips", "stateabb", "ses", "meangs", "mnenrol", "top100")
+names(df) <- cols_
+View(df)
+```
+
+```{r}
+df_alb <- filter(df, leaname == "Albany City Unified")
+sprintf("% s grade levels above average", df_alb$meangs)
+```
+```{r}
+summary(df$meangs)
+```
+```{r}
+
+number_of_districts <- length(unique(df$leaname))
+sprintf("There are % s districts", formatC(number_of_districts, format="f", big.mark=",", digits=0))
+```
+
+
