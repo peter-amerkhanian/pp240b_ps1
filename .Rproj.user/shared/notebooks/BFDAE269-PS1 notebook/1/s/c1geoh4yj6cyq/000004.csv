@@ -1,0 +1,7 @@
+"0",""
+"0","number_of_districts <- length(unique(df$leaname))"
+"0","sprintf(""There are % s districts"", formatC(number_of_districts, format=""f"", big.mark="","", digits=0))"
+"1","[1]"
+"1"," ""There are 12,209 districts"""
+"1","
+"
