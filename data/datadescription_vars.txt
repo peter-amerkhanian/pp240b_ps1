@@ -1,0 +1,17 @@
+Contains data from C:\Users\Rucker\Desktop\old laptop files\Rucker Johnson\Documents\QuantPP240B_Spring2022\SEDA_DistrictData.dta
+  obs:        12,600                          
+ vars:             8                          24 Jan 2022 20:59
+ size:     1,234,800                          (_dta has notes)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+leaid           double  %10.0g                Geographic District ID
+leaname         str60   %60s                  LEA Name
+fips            float   %10.0g                Fips State Code
+stateabb        str2    %9s                   State Abbreviation
+ses             double  %10.0g                SES Composite, all families, EB estimate, 2007-11 & 2012-16 avg
+meangs          double  %9.3g                 Mean Achievement, GCS scale, EB estimate, math & ELA avg, all students
+mnenrol         float   %9.0g                 Mean number of students per grade
+top100          float   %9.0g                 Flag, 100 largest Districts
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
